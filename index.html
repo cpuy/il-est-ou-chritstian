@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Il est o&ugrave; Christian ?</title>
+<link rel="stylesheet" type="text/css"  href="css/droidserif.css" >
+<link rel="stylesheet" type="text/css" href="css/christian.css" />
+<link rel="stylesheet" type="text/css" href="css/tipTip.css" />
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/christian-charlie.js"></script>
+
+
+<script>
+
+function aideChristianCharlie() {
+   
+   $('#christian-charlie').mousemove(function(e){
+	var x = e.pageX - this.offsetLeft;
+        var y = e.pageY - this.offsetTop;
+	tuChauffeOuTuRefroidi(x, y);
+        $('#charlie .tip_bottom').css('left', e.pageX -35).css('top', e.pageY + 20).css('display', 'block');
+        $('#xy').html(x + ', ' + y);
+   });
+
+   $("#christian-charlie").mouseout(function() { 
+        $('#charlie .tip_bottom').css('display', 'none');
+   });
+ 
+}
+</script>
+
+<style>
+
+#charlie .help-tooltip {
+   position: absolute;
+   z-index: 100;
+   top: 100px;
+   left: 100px;
+   background-color: blue;
+}
+</style>
+</head>
+
+<body>
+	<!--[if !IE]><!-->
+	<header>
+		<h1>Ben... Il est o&ugrave; Christian ?</h1>
+	</header>
+
+	<div id="content">
+		<div class="bubble">
+			<h2>Aidez Fred a trouver Christian</h2>
+			<p>Ben... il est o&ugrave; Christian. On a perdu christian !</p>
+			<p>Prochainemant sur <a href="#">il-est-ou-christian.fr</a> retrouvez plus d'outils pour :</p>
+			<ul>
+				<li>Chercher Christian</li>
+				<li>Ne pas perdre Christian</li>
+			</ul>
+		</div>
+                <div class="bubble">
+			<h2>En attendant ...</h2>
+			<a id="btn-help-charlie" class="btn" onclick="alert('Aide activ&eacute;e'); aideChristianCharlie();">J'ai besoin d'aide</a>
+			<p>Vous pouvez essayer de retrouver Christian sur la plage<p>
+			<div id="charlie">
+				<img id="christian-charlie" src="img/christian-charlie.jpg">
+				<div id="tiptip_holder" class="tip_bottom" >
+					<div id="tiptip_arrow" style="margin-left: 40px;margin-top: -11px; ">
+					<div id="tiptip_arrow_inner"></div>
+				</div>
+				<div id="tiptip_content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="status"></div>
+	<footer></footer>
+	<!--<![endif]-->
+
+	<!--[if IE]>
+	<p>Vous ne pouvez pas chercher Christian avec un navigateur tout pourri comme Internet Explorer. Essayer avec <a href="www.mozilla.org/fr/firefox">Firefox</a> ou <a href="https://www.google.com/chrome?hl=fr">Chrome</a></p>
+	<![endif]-->
+</body>
+
+</html> 

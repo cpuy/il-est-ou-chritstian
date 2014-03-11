@@ -1,0 +1,77 @@
+
+body {
+   padding: 0;
+   /*font: 1.25em/1.75em "DroidSerifRegular";*/
+   letter-spacing: 0.075em;
+   margin: 0;
+   color: #444444;
+}
+
+header {
+   margin: 0;
+   padding: 10px;
+   background: #374248 url('../img/2-action-search.png') no-repeat; 
+   width: 100%;
+}
+
+header h1 {
+   margin: 0;
+   margin-left: 100px;
+   color: #D7D9DA;
+   font-size:40px;
+   font-weight: bold;
+   font-family: Georgia,Times New Roman,serif;
+   height: auto;
+   letter-spacing: -2px;
+   text-shadow: 2px 2px #151A1D;
+   width: auto;
+}
+
+h2  {
+   margin: 0;
+   color: #E2911E;
+   letter-spacing: -2px;
+   text-shadow: 1px 1px grey;
+}
+
+#content {
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#content .bubble {
+   margin: 5px 0 15px 0;
+   padding: 15px;
+   background-color: #EEEEEE;
+   border-radius: 15px;
+   box-shadow: 0 10px 10px #888;
+   min-width: 1024px;	
+}
+
+#charlie {
+   text-align: center;
+}
+
+#btn-help-charlie {
+   float: right;
+   margin-top: -25px;
+   margin-right: 5px;
+}
+
+.btn {
+    background: -moz-linear-gradient(#E5E5E5, #CFCFCF) repeat scroll 0 0 transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, 0.6) inset, 1px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+   cursor: pointer;
+}
+
+.btn:active {
+   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) inset, 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
